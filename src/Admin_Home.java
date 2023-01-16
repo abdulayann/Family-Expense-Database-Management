@@ -20,13 +20,13 @@ public class Admin_Home extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,47 +100,11 @@ public class Admin_Home extends javax.swing.JFrame {
         jLabel3.setText("Welcome Admin,");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 300, 50));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 241));
-        jButton1.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(26, 69, 124));
-        jButton1.setText("DELETE MEMBER");
-        jButton1.setBorder(null);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 320, 70));
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 241));
-        jButton2.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(26, 69, 124));
-        jButton2.setText("LOGOUT");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 320, 60));
-
-        jButton3.setBackground(new java.awt.Color(255, 255, 241));
-        jButton3.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(26, 69, 124));
-        jButton3.setText("UPDATE MEMBER");
-        jButton3.setBorder(null);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 320, 70));
-
         jButton4.setBackground(new java.awt.Color(255, 255, 241));
         jButton4.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
         jButton4.setForeground(new java.awt.Color(26, 69, 124));
         jButton4.setText("ADD MEMBER");
-        jButton4.setBorder(null);
+        jButton4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -148,23 +112,47 @@ public class Admin_Home extends javax.swing.JFrame {
         });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 320, 70));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 241));
-        jButton6.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(26, 69, 124));
-        jButton6.setText("FAMILY OVERVIEW");
-        jButton6.setBorder(null);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setBackground(new java.awt.Color(255, 255, 241));
+        jButton3.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(26, 69, 124));
+        jButton3.setText("UPDATE MEMBER");
+        jButton3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 320, 70));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 320, 70));
+
+        jButton1.setBackground(new java.awt.Color(255, 255, 241));
+        jButton1.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(26, 69, 124));
+        jButton1.setText("DELETE MEMBER");
+        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 320, 70));
+
+        jButton7.setBackground(new java.awt.Color(255, 255, 241));
+        jButton7.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(26, 69, 124));
+        jButton7.setText("MEMBER LIST");
+        jButton7.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 320, 70));
 
         jButton5.setBackground(new java.awt.Color(255, 255, 241));
         jButton5.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
         jButton5.setForeground(new java.awt.Color(26, 69, 124));
         jButton5.setText("MEMBER VIEW");
-        jButton5.setBorder(null);
+        jButton5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -172,17 +160,29 @@ public class Admin_Home extends javax.swing.JFrame {
         });
         jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 320, 70));
 
-        jButton7.setBackground(new java.awt.Color(255, 255, 241));
-        jButton7.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(26, 69, 124));
-        jButton7.setText("MEMBER LIST");
-        jButton7.setBorder(null);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        jButton6.setBackground(new java.awt.Color(255, 255, 241));
+        jButton6.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(26, 69, 124));
+        jButton6.setText("FAMILY OVERVIEW");
+        jButton6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 320, 70));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 320, 70));
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 241));
+        jButton2.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(26, 69, 124));
+        jButton2.setText("LOGOUT");
+        jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 320, 60));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 430, 700));
 

@@ -5,8 +5,8 @@ import Backend.*;
 public class Admin_Info extends javax.swing.JFrame {
 
     Connection con;
-    PreparedStatement pst,pst2;
-    ResultSet rs1,rs2;
+    Statement pst1,pst2,pst3,pst4,pst5,pst6;
+    ResultSet rs1,rs2,rs3,rs4,rs5,rs6;
     public Admin_Info() {
         initComponents();
         con = ConnectSQL.createC();
@@ -16,20 +16,41 @@ public class Admin_Info extends javax.swing.JFrame {
     
 
     public void update_info() {
-        int c = 0;
-        float income, loan, expense, saving;
+        int c = 0,gc=0;
+        float income=0, loan=0, expense=0, saving=0;
         try {
-            pst = con.prepareStatement("select count(username)  from members");
-           
-            
-             rs1= pst.executeQuery();
-
-            while (rs1.next()) {
-                c = rs1.getInt(1);
-            }
+            pst1 = con.createStatement();
+             rs1= pst1.executeQuery("select count(*) from members");
+              pst2 = con.createStatement();
+              rs2 = pst2.executeQuery("select sum(amount) from expenses");
+              pst3 = con.createStatement();
+              rs3 = pst3.executeQuery("select sum(amount) from incomes");
+              pst4 = con.createStatement();
+              rs4 = pst4.executeQuery("select sum(amount) from savings");
+              pst5 = con.createStatement();
+              rs5 = pst5.executeQuery("select count(gid) from goals");
+               pst6 = con.createStatement();
+              rs6 = pst6.executeQuery("select sum(amount) from loans");
+              
+           if(rs1.next())
+               c=rs1.getInt(1);
+           if(rs2.next())
+                expense=rs2.getInt(1);
+           if(rs3.next())
+                income=rs3.getInt(1);
+           if(rs4.next())
+                saving=rs4.getInt(1);
+           if(rs5.next())
+                gc=rs5.getInt(1);
+           if(rs6.next())
+                loan=rs6.getInt(1);
             
             count.setText(String.valueOf(c));
-//            Expense.setText(String);
+            Expenses.setText(String.valueOf(expense));
+            Incomes.setText(String.valueOf(income));
+            GC.setText(String.valueOf(gc));
+            Savings.setText(String.valueOf(saving));
+            Loans.setText(String.valueOf(loan));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -50,17 +71,16 @@ public class Admin_Info extends javax.swing.JFrame {
         count = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         Savings = new javax.swing.JLabel();
-        Income = new javax.swing.JLabel();
-        Loans = new javax.swing.JLabel();
-        Expense = new javax.swing.JLabel();
+        Incomes = new javax.swing.JLabel();
+        GC = new javax.swing.JLabel();
+        Expenses = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        Loans1 = new javax.swing.JLabel();
+        Loans = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(487, 120));
-        setMaximumSize(new java.awt.Dimension(1010, 700));
         setMinimumSize(new java.awt.Dimension(1010, 700));
         setUndecorated(true);
         setResizable(false);
@@ -98,7 +118,7 @@ public class Admin_Info extends javax.swing.JFrame {
         count.setBackground(new java.awt.Color(255, 255, 242));
         count.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
         count.setText("0");
-        jPanel3.add(count, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 98, -1));
+        jPanel3.add(count, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 300, -1));
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(64, 36, 51));
@@ -108,32 +128,32 @@ public class Admin_Info extends javax.swing.JFrame {
         Savings.setBackground(new java.awt.Color(255, 255, 242));
         Savings.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
         Savings.setText("0 ");
-        jPanel3.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 98, -1));
+        jPanel3.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 300, -1));
 
-        Income.setBackground(new java.awt.Color(255, 255, 242));
-        Income.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
-        Income.setText("0");
-        jPanel3.add(Income, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 98, -1));
+        Incomes.setBackground(new java.awt.Color(255, 255, 242));
+        Incomes.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Incomes.setText("0");
+        jPanel3.add(Incomes, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 300, -1));
 
-        Loans.setBackground(new java.awt.Color(255, 255, 242));
-        Loans.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
-        Loans.setText("0");
-        jPanel3.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 98, -1));
+        GC.setBackground(new java.awt.Color(255, 255, 242));
+        GC.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        GC.setText("0");
+        jPanel3.add(GC, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 300, -1));
 
-        Expense.setBackground(new java.awt.Color(255, 255, 242));
-        Expense.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
-        Expense.setText("0");
-        jPanel3.add(Expense, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 98, -1));
+        Expenses.setBackground(new java.awt.Color(255, 255, 242));
+        Expenses.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Expenses.setText("0");
+        jPanel3.add(Expenses, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 300, -1));
 
         jLabel9.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(64, 36, 51));
         jLabel9.setText("TOTAL LOAN :");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 330, -1));
 
-        Loans1.setBackground(new java.awt.Color(255, 255, 242));
-        Loans1.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
-        Loans1.setText("0");
-        jPanel3.add(Loans1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, 98, -1));
+        Loans.setBackground(new java.awt.Color(255, 255, 242));
+        Loans.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Loans.setText("0");
+        jPanel3.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 300, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 900, 470));
 
@@ -201,10 +221,10 @@ public class Admin_Info extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Expense;
-    private javax.swing.JLabel Income;
+    private javax.swing.JLabel Expenses;
+    private javax.swing.JLabel GC;
+    private javax.swing.JLabel Incomes;
     private javax.swing.JLabel Loans;
-    private javax.swing.JLabel Loans1;
     private javax.swing.JLabel Savings;
     private javax.swing.JLabel count;
     private javax.swing.JButton jButton3;

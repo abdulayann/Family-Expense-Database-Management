@@ -148,7 +148,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="Savings">
+            <Component class="javax.swing.JLabel" name="Saving">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="ff" red="ff" type="rgb"/>
@@ -160,7 +160,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="190" width="98" height="-1"/>
+                  <AbsoluteConstraints x="550" y="190" width="310" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -176,11 +176,11 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="90" width="98" height="-1"/>
+                  <AbsoluteConstraints x="550" y="90" width="310" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="txtGc">
+            <Component class="javax.swing.JLabel" name="GC">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="ff" red="ff" type="rgb"/>
@@ -192,7 +192,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="290" width="98" height="-1"/>
+                  <AbsoluteConstraints x="550" y="290" width="310" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -208,7 +208,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="140" width="98" height="-1"/>
+                  <AbsoluteConstraints x="550" y="140" width="310" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -228,7 +228,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JLabel" name="Loans1">
+            <Component class="javax.swing.JLabel" name="Loans">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="f2" green="ff" red="ff" type="rgb"/>
@@ -240,7 +240,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="240" width="98" height="-1"/>
+                  <AbsoluteConstraints x="550" y="240" width="310" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>

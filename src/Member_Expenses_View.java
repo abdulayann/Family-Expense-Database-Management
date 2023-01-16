@@ -107,8 +107,6 @@ public void table_update()
             pst =con.prepareStatement("Select eid,name,amount,category,date,mode from expenses where User=?");
             pst.setString(1,Login.usern);
             ResultSet rs = pst.executeQuery();
-            
-            
            while(rs.next())
            {
                String eid,name,amount,category,date,mode;

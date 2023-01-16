@@ -38,7 +38,6 @@ public class Login extends javax.swing.JFrame {
         ExitBut = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setUndecorated(true);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -76,19 +75,19 @@ public class Login extends javax.swing.JFrame {
         jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 280, 50));
 
         txtUser.setFont(new java.awt.Font("Tw Cen MT", 1, 22)); // NOI18N
-        txtUser.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 69, 124), 2, true));
+        txtUser.setBorder(null);
         txtUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUserActionPerformed(evt);
             }
         });
-        jPanel4.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 210, 40));
+        jPanel4.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 240, 40));
 
         butLogin.setBackground(new java.awt.Color(255, 255, 241));
-        butLogin.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        butLogin.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         butLogin.setForeground(new java.awt.Color(51, 51, 51));
         butLogin.setText("Login");
-        butLogin.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 69, 124), 2, true));
+        butLogin.setBorder(null);
         butLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 butLoginActionPerformed(evt);
@@ -101,13 +100,13 @@ public class Login extends javax.swing.JFrame {
         jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 190, 50));
 
         txtPw.setFont(new java.awt.Font("Tw Cen MT", 1, 22)); // NOI18N
-        txtPw.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 69, 124), 2, true));
+        txtPw.setBorder(null);
         txtPw.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPwActionPerformed(evt);
             }
         });
-        jPanel4.add(txtPw, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 210, 40));
+        jPanel4.add(txtPw, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 250, 240, 40));
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 160, 650, 480));
 

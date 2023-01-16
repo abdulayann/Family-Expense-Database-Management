@@ -26,10 +26,8 @@ public class Welcome_Page extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -64,7 +62,7 @@ public class Welcome_Page extends javax.swing.JFrame {
         ExitBut.setFont(new java.awt.Font("Franklin Gothic Medium", 1, 26)); // NOI18N
         ExitBut.setForeground(new java.awt.Color(26, 69, 124));
         ExitBut.setText("CLOSE");
-        ExitBut.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 69, 124), 3, true));
+        ExitBut.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ExitBut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ExitBut.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         ExitBut.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +119,7 @@ public class Welcome_Page extends javax.swing.JFrame {
         GetStarted.setFont(new java.awt.Font("Franklin Gothic Medium", 1, 26)); // NOI18N
         GetStarted.setForeground(new java.awt.Color(26, 69, 124));
         GetStarted.setText("Get Started! ");
-        GetStarted.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(26, 69, 124), 3, true));
+        GetStarted.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         GetStarted.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         GetStarted.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         GetStarted.addActionListener(new java.awt.event.ActionListener() {
