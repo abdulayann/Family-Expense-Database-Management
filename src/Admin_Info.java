@@ -76,8 +76,12 @@ public class Admin_Info extends javax.swing.JFrame {
         Expenses = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         Loans = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        Back_button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(487, 120));
@@ -95,85 +99,99 @@ public class Admin_Info extends javax.swing.JFrame {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(881, 26, -1, 319));
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel4.setText("MEMBER COUNT :");
+        jLabel4.setText("Member Count :");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 330, -1));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel5.setText("TOTAL INCOME :");
+        jLabel5.setText("Total Income :");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 330, -1));
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel6.setText("TOTAL EXPENSES :");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 390, -1));
+        jLabel6.setText("Total Expenses :");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 310, -1));
 
-        jLabel7.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel7.setText("TOTAL GOAL COUNT :");
+        jLabel7.setText("Total Goal Count :");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 370, -1));
 
         count.setBackground(new java.awt.Color(255, 255, 242));
-        count.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        count.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         count.setText("0");
-        jPanel3.add(count, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 300, -1));
+        jPanel3.add(count, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 300, -1));
 
-        jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel8.setText("TOTAL SAVINGS :");
+        jLabel8.setText("Total Savings :");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 330, -1));
 
         Savings.setBackground(new java.awt.Color(255, 255, 242));
-        Savings.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Savings.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         Savings.setText("0 ");
-        jPanel3.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 300, -1));
+        jPanel3.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 300, -1));
 
         Incomes.setBackground(new java.awt.Color(255, 255, 242));
-        Incomes.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Incomes.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         Incomes.setText("0");
-        jPanel3.add(Incomes, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 300, -1));
+        jPanel3.add(Incomes, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 300, -1));
 
         GC.setBackground(new java.awt.Color(255, 255, 242));
-        GC.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        GC.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         GC.setText("0");
-        jPanel3.add(GC, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 300, -1));
+        jPanel3.add(GC, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 300, -1));
 
         Expenses.setBackground(new java.awt.Color(255, 255, 242));
-        Expenses.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Expenses.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         Expenses.setText("0");
-        jPanel3.add(Expenses, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 300, -1));
+        jPanel3.add(Expenses, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 300, -1));
 
-        jLabel9.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(64, 36, 51));
-        jLabel9.setText("TOTAL LOAN :");
+        jLabel9.setText("Total Loans :");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 330, -1));
 
         Loans.setBackground(new java.awt.Color(255, 255, 242));
-        Loans.setFont(new java.awt.Font("Yu Gothic UI", 0, 36)); // NOI18N
+        Loans.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
         Loans.setText("0");
-        jPanel3.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 300, -1));
+        jPanel3.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 300, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 900, 470));
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
+        jLabel1.setText("₹");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, 40, 40));
 
-        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
+        jLabel10.setText("₹");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 40, 40));
+
+        jLabel11.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
+        jLabel11.setText("₹");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 40, 40));
+
+        jLabel12.setFont(new java.awt.Font("Trebuchet MS", 0, 36)); // NOI18N
+        jLabel12.setText("₹");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 40, 40));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 900, 460));
+
+        jLabel2.setFont(new java.awt.Font("Rockwell", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(42, 16, 108));
         jLabel2.setText("FAMILY INFO ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 329, 80));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 370, 80));
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 242));
-        jButton3.setFont(new java.awt.Font("Arial", 0, 28)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(42, 68, 148));
-        jButton3.setText("Back");
-        jButton3.setToolTipText("");
-        jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(42, 68, 148), 2, true));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Back_button.setBackground(new java.awt.Color(255, 255, 242));
+        Back_button.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        Back_button.setForeground(new java.awt.Color(42, 68, 146));
+        Back_button.setText("BACK");
+        Back_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Back_buttonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 640, 90, 40));
+        jPanel1.add(Back_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 650, 82, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -189,10 +207,10 @@ public class Admin_Info extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Back_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_buttonActionPerformed
+        // TODO add your handling code here:
         dispose();
-       
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Back_buttonActionPerformed
 
     public static void main(String args[]) {
 
@@ -221,13 +239,17 @@ public class Admin_Info extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Back_button;
     private javax.swing.JLabel Expenses;
     private javax.swing.JLabel GC;
     private javax.swing.JLabel Incomes;
     private javax.swing.JLabel Loans;
     private javax.swing.JLabel Savings;
     private javax.swing.JLabel count;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

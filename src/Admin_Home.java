@@ -1,14 +1,11 @@
 
 import javax.swing.JOptionPane;
 
-
 public class Admin_Home extends javax.swing.JFrame {
-
 
     public Admin_Home() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -21,8 +18,6 @@ public class Admin_Home extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -42,12 +37,12 @@ public class Admin_Home extends javax.swing.JFrame {
         jPanel2.setMinimumSize(new java.awt.Dimension(1980, 100));
         jPanel2.setRequestFocusEnabled(false);
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 50)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 241));
         jLabel1.setText("FAMILY EXPENSE MANAGER");
 
         ExitBut.setBackground(new java.awt.Color(26, 69, 124));
-        ExitBut.setFont(new java.awt.Font("Franklin Gothic Medium", 1, 23)); // NOI18N
+        ExitBut.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
         ExitBut.setForeground(new java.awt.Color(255, 255, 255));
         ExitBut.setText("CLOSE");
         ExitBut.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
@@ -66,17 +61,20 @@ public class Admin_Home extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 842, Short.MAX_VALUE)
-                .addComponent(ExitBut, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(561, 561, 561))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 754, Short.MAX_VALUE)
+                .addComponent(ExitBut, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(548, 548, 548))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ExitBut, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(ExitBut, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
@@ -95,94 +93,69 @@ public class Admin_Home extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(640, 500));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("SansSerif", 1, 33)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Welcome Admin,");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 300, 50));
+        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 153));
+        jLabel3.setText("WELCOME ADMIN ");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 300, 50));
 
         jButton4.setBackground(new java.awt.Color(255, 255, 241));
-        jButton4.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton4.setForeground(new java.awt.Color(26, 69, 124));
-        jButton4.setText("ADD MEMBER");
-        jButton4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton4.setText("MANAGE MEMBER");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 320, 70));
-
-        jButton3.setBackground(new java.awt.Color(255, 255, 241));
-        jButton3.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(26, 69, 124));
-        jButton3.setText("UPDATE MEMBER");
-        jButton3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 320, 70));
-
-        jButton1.setBackground(new java.awt.Color(255, 255, 241));
-        jButton1.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(26, 69, 124));
-        jButton1.setText("DELETE MEMBER");
-        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 320, 70));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 300, 60));
 
         jButton7.setBackground(new java.awt.Color(255, 255, 241));
-        jButton7.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton7.setForeground(new java.awt.Color(26, 69, 124));
         jButton7.setText("MEMBER LIST");
-        jButton7.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton7.setBorder(null);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 320, 70));
+        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 300, 60));
 
         jButton5.setBackground(new java.awt.Color(255, 255, 241));
-        jButton5.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton5.setForeground(new java.awt.Color(26, 69, 124));
         jButton5.setText("MEMBER VIEW");
-        jButton5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton5.setBorder(null);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, 320, 70));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 300, 50));
 
         jButton6.setBackground(new java.awt.Color(255, 255, 241));
-        jButton6.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton6.setForeground(new java.awt.Color(26, 69, 124));
         jButton6.setText("FAMILY OVERVIEW");
-        jButton6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton6.setBorder(null);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 320, 70));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 300, 60));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 241));
-        jButton2.setFont(new java.awt.Font("SansSerif", 1, 21)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton2.setForeground(new java.awt.Color(26, 69, 124));
         jButton2.setText("LOGOUT");
-        jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        jButton2.setBorder(null);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 320, 60));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 300, 60));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 430, 700));
 
@@ -194,55 +167,41 @@ public class Admin_Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-    Admin_Delete.main(null);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      dispose();
-      Login.main(null);
+        int a = JOptionPane.showConfirmDialog(null, "Do you really want to logout?", "Select", JOptionPane.YES_NO_OPTION);
+        if (a == 0) {
+            Login.main(null);
+            dispose();
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Admin_Update.main(null);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        Admin_Insert.main(null);
+
+        Admin_Memeber_Manage.main(null);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         Admin_Member_Info.main(null);
-        
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         Admin_Info.main(null);
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Admin_View.main(null);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     private void ExitButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButActionPerformed
-        int a=JOptionPane.showConfirmDialog(null,"Do you really want to close Application","Select",JOptionPane.YES_NO_OPTION);
-        if(a==0)
-        {
+        int a = JOptionPane.showConfirmDialog(null, "Do you really want to close Application", "Select", JOptionPane.YES_NO_OPTION);
+        if (a == 0) {
             System.exit(0);
         }
     }//GEN-LAST:event_ExitButActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-       Admin_View.main(null);
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -250,18 +209,11 @@ public class Admin_Home extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Admin_Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Admin_Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Admin_Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Admin_Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            
         }
-        //</editor-fold>
+      
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Admin_Home().setVisible(true);
@@ -271,9 +223,7 @@ public class Admin_Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ExitBut;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;

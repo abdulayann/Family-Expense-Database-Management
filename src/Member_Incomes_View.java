@@ -20,10 +20,10 @@ public class Member_Incomes_View extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        Back_button = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         IncomeTable = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
+        Back_button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(470, 120));
@@ -34,18 +34,6 @@ public class Member_Incomes_View extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 242));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Back_button.setBackground(new java.awt.Color(255, 255, 242));
-        Back_button.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        Back_button.setForeground(new java.awt.Color(42, 68, 146));
-        Back_button.setText("Back");
-        Back_button.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(42, 68, 148), 2, true));
-        Back_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Back_buttonActionPerformed(evt);
-            }
-        });
-        jPanel3.add(Back_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 650, 82, 40));
 
         jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(42, 68, 146), 2, true));
 
@@ -87,8 +75,19 @@ public class Member_Incomes_View extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(42, 34, 107));
-        jLabel2.setText("INCOME TABLE :");
+        jLabel2.setText("INCOME TABLE ");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 340, 69));
+
+        Back_button.setBackground(new java.awt.Color(255, 255, 242));
+        Back_button.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        Back_button.setForeground(new java.awt.Color(42, 68, 146));
+        Back_button.setText("BACK");
+        Back_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Back_buttonActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Back_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 650, 82, 40));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
 
@@ -96,8 +95,8 @@ public class Member_Incomes_View extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Back_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_buttonActionPerformed
-            dispose();
-     
+        // TODO add your handling code here:
+        dispose();
     }//GEN-LAST:event_Back_buttonActionPerformed
 public void table_update()
     {

@@ -1,6 +1,7 @@
 
 import Backend.ConnectSQL;
 import java.sql.*;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -27,7 +28,6 @@ public class Member_Expenses_View extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(470, 120));
-        setMaximumSize(new java.awt.Dimension(1040, 720));
         setMinimumSize(new java.awt.Dimension(1040, 720));
         setUndecorated(true);
         setSize(new java.awt.Dimension(1040, 720));
@@ -88,7 +88,7 @@ public class Member_Expenses_View extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(42, 34, 107));
-        jLabel2.setText("EXPENSE TABLE :");
+        jLabel2.setText("EXPENSE TABLE ");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 340, 69));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
@@ -107,8 +107,9 @@ public void table_update()
             pst =con.prepareStatement("Select eid,name,amount,category,date,mode from expenses where User=?");
             pst.setString(1,Login.usern);
             ResultSet rs = pst.executeQuery();
-           while(rs.next())
-           {
+            if(rs.next())
+            {
+           do{
                String eid,name,amount,category,date,mode;
                eid = String.valueOf(rs.getInt("eid"));
                name = rs.getString("name");
@@ -120,7 +121,12 @@ public void table_update()
                String tbData[] = {eid,name,amount,category,date,mode};
                DefaultTableModel tblModel = (DefaultTableModel)ExpenseTable.getModel();
                tblModel.addRow(tbData);
-           }
+           }while(rs.next());
+        }
+//            else
+//            {
+//               JOptionPane.showMessageDialog(this, "No Expenses found!");
+//            }
         }
         catch(Exception e)
         {
