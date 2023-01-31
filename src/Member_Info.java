@@ -47,8 +47,8 @@ public class Member_Info extends javax.swing.JFrame {
                 income=rs3.getInt(1);
            if(rs2.next())
                 saving=rs2.getInt(1);
-           if(rs5.next())
-                gc=rs5.getInt(1);
+           if(rs4.next())
+                loan=rs4.getInt(1);
            
             Expense.setText(String.valueOf(expense));
             Income.setText(String.valueOf(income));

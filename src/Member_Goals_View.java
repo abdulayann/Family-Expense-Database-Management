@@ -89,7 +89,7 @@ public class Member_Goals_View extends javax.swing.JFrame {
         });
         jPanel3.add(Back_button, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 650, 82, 40));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 700));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

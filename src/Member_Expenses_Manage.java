@@ -125,7 +125,6 @@ public class Member_Expenses_Manage extends javax.swing.JFrame {
         txtCategory.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtCategory.setForeground(new java.awt.Color(42, 68, 148));
         txtCategory.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Housing ", "Food ", "Transportation", "Childcare", "Healthcare", "Education", "Entertainment", "Clothing", "Debt payments", "Savings" }));
-        txtCategory.setSelectedIndex(-1);
         txtCategory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCategoryActionPerformed(evt);
@@ -358,8 +357,8 @@ public class Member_Expenses_Manage extends javax.swing.JFrame {
         eid = txtEid.getText();
 
         try {
-            if (!eid.isEmpty()) {
-                if (!name.isEmpty() || !amount.isEmpty() || !category.isEmpty() || !mode.isEmpty() || !date.isEmpty()) {
+            if (!eid.trim().isEmpty()) {
+                if (!name.trim().isEmpty() || !amount.trim().isEmpty() || !category.trim().isEmpty() || !mode.trim().isEmpty() || !date.trim().isEmpty()) {
                     pst = con.prepareStatement("select * from expenses where eid=? and user=?");
                     pst.setString(1, eid);
                     pst.setString(2, Login.usern);
@@ -384,13 +383,11 @@ public class Member_Expenses_Manage extends javax.swing.JFrame {
                     } else {
                         JOptionPane.showMessageDialog(this, "No expense found with EID=" + eid);
                     }
-
                 } else {
                     JOptionPane.showMessageDialog(this, "Please fill in all the details !");
                 }
             } else {
                 JOptionPane.showMessageDialog(this, "Please fill the username !");
-
             }
 
         } catch (SQLException ex) {
@@ -407,34 +404,30 @@ public class Member_Expenses_Manage extends javax.swing.JFrame {
         try {
             String username = Login.usern;
             String name, amount, category, mode, date;
-
             name = txtName.getText();
             amount = txtAmt.getText();
             category = txtCategory.getSelectedItem().toString();
             mode = txtMode.getText();
             date = txtDate.getText();
-            if (!name.isEmpty() || !amount.isEmpty() || !category.isEmpty() || !mode.isEmpty() || !date.isEmpty()) {
+            if (!name.trim().isEmpty() || !amount.trim().isEmpty() || !category.trim().isEmpty() || !mode.trim().isEmpty() || !date.trim().isEmpty()) {
                 pst = con.prepareStatement("insert into expenses(user,name,amount,category,date,mode)values(?,?,?,?,?,?)");
-         
-            pst.setString(1, username);
-            pst.setString(2, name);
-            pst.setString(3, amount);
-            pst.setString(4, category);
-            pst.setString(5, date);
-            pst.setString(6, mode);
+                pst.setString(1, username);
+                pst.setString(2, name);
+                pst.setString(3, amount);
+                pst.setString(4, category);
+                pst.setString(5, date);
+                pst.setString(6, mode);
 
-            pst.executeUpdate();
+                pst.executeUpdate();
 
-            txtName.setText("");
-            txtAmt.setText("");
-            txtMode.setText("");
-            txtDate.setText("");
-            txtName.requestFocus();
+                txtName.setText("");
+                txtAmt.setText("");
+                txtMode.setText("");
+                txtDate.setText("");
+                txtName.requestFocus();
 
-            JOptionPane.showMessageDialog(this, "Added Successfully");
-            }
-            else
-            {
+                JOptionPane.showMessageDialog(this, "Added Successfully");
+            } else {
                 JOptionPane.showMessageDialog(this, " Please fill in all the details!");
             }
         } catch (SQLException ex) {
@@ -444,10 +437,9 @@ public class Member_Expenses_Manage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-
         try {
             String eid = txtEid.getText();
-            if (eid.isEmpty()) {
+            if (eid.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Enter a valid EID ");
             } else {
                 pst = con.prepareStatement("select * from expenses where eid=? and user=? ");

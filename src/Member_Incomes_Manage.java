@@ -290,7 +290,7 @@ public class Member_Incomes_Manage extends javax.swing.JFrame {
         iid = txtIid.getText();
 
         try {
-            if (!iid.isEmpty() || !type.isEmpty() || !amount.isEmpty() || !date.isEmpty()) {
+            if (!iid.trim().isEmpty() || !type.trim().isEmpty() || !amount.trim().isEmpty() || !date.trim().isEmpty()) {
                 pst = con.prepareStatement("select * from incomes where iid=? and user=?");
                 pst.setString(1, iid);
                 pst.setString(2, Login.usern);
@@ -336,7 +336,7 @@ public class Member_Incomes_Manage extends javax.swing.JFrame {
             type = txtType.getText();
             amount = txtAmt.getText();
             date = txtDate.getText();
-            if (!type.isEmpty() || !amount.isEmpty() || !date.isEmpty()) {
+            if (!type.trim().isEmpty() || !amount.trim().isEmpty() || !date.trim().isEmpty()) {
                 pst = con.prepareStatement("insert into incomes(user,type,amount,date)values(?,?,?,?)");
                 pst.setString(1, username);
                 pst.setString(2, type);
@@ -365,7 +365,7 @@ public class Member_Incomes_Manage extends javax.swing.JFrame {
 
         try {
             String iid = txtIid.getText();
-            if (iid.isEmpty()) {
+            if (iid.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Enter a valid IID ");
             } else {
                 pst = con.prepareStatement("select * from incomes where iid=? and user=?");

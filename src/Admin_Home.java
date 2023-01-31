@@ -102,60 +102,61 @@ public class Admin_Home extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton4.setForeground(new java.awt.Color(26, 69, 124));
         jButton4.setText("MANAGE MEMBER");
+        jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 153), 2, true));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 300, 60));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 300, 70));
 
         jButton7.setBackground(new java.awt.Color(255, 255, 241));
         jButton7.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton7.setForeground(new java.awt.Color(26, 69, 124));
         jButton7.setText("MEMBER LIST");
-        jButton7.setBorder(null);
+        jButton7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 153), 2, true));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 300, 60));
+        jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 300, 70));
 
         jButton5.setBackground(new java.awt.Color(255, 255, 241));
         jButton5.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton5.setForeground(new java.awt.Color(26, 69, 124));
         jButton5.setText("MEMBER VIEW");
-        jButton5.setBorder(null);
+        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 153), 2, true));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 300, 50));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 300, 60));
 
         jButton6.setBackground(new java.awt.Color(255, 255, 241));
         jButton6.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton6.setForeground(new java.awt.Color(26, 69, 124));
         jButton6.setText("FAMILY OVERVIEW");
-        jButton6.setBorder(null);
+        jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 153), 2, true));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 300, 60));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 300, 70));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 241));
         jButton2.setFont(new java.awt.Font("Trebuchet MS", 1, 21)); // NOI18N
         jButton2.setForeground(new java.awt.Color(26, 69, 124));
         jButton2.setText("LOGOUT");
-        jButton2.setBorder(null);
+        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 153), 2, true));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 470, 300, 60));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 300, 70));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 430, 700));
 

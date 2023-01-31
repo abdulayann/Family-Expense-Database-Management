@@ -149,38 +149,38 @@
                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                               <Component id="jLabel6" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="txtLid" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtLid" min="-2" pref="44" max="-2" attributes="0"/>
                           <Component id="jButton8" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel8" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="txtName" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtName" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtAmt" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtAmt" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCategory" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtCategory" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtDate" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtDate" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtPeriod" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtPeriod" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtInterest" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="txtInterest" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">

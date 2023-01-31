@@ -7,7 +7,7 @@ public class Member_Goals_Manage extends javax.swing.JFrame {
 
     Connection con;
     PreparedStatement pst;
-    ;
+    
     ResultSet rs;
 
     public Member_Goals_Manage() {
@@ -246,7 +246,7 @@ public class Member_Goals_Manage extends javax.swing.JFrame {
 
             String GID = txtGid.getText();
 
-            pst = con.prepareStatement("select from goals where gid=? and user = ?");
+            pst = con.prepareStatement("select * from goals where gid=? and user= ?");
             pst.setString(1, GID);
             pst.setString(2, Login.usern);
             rs = pst.executeQuery();
@@ -302,19 +302,19 @@ public class Member_Goals_Manage extends javax.swing.JFrame {
         gid = txtGid.getText();
 
         try {
-            if (!gid.isEmpty() || !edate.isEmpty() || !sdate.isEmpty() || !goal.isEmpty()) {
-                pst = con.prepareStatement("select from goals where gid=? and user = ?");
+            if (!gid.trim().isEmpty() || !edate.trim().isEmpty() || !sdate.trim().isEmpty() || !goal.trim().isEmpty()) {
+                pst = con.prepareStatement("select * from goals where gid=? and user = ?");
                 pst.setString(1, gid);
                 pst.setString(2, Login.usern);
                 rs = pst.executeQuery();
                 if (rs.next()) {
-                    pst = con.prepareStatement("update goals set goal=?,startdate=?,enddate=? where gid=? and user=?");
+                    pst = con.prepareStatement("update goals set goal=?,startdate=?,enddate=? where gid=1 and user=?");
                     pst.setString(1, goal);
                     pst.setString(2, sdate);
                     pst.setString(3, edate);
                     pst.setString(4, gid);
                     pst.setString(5, Login.usern);
-                    pst.executeUpdate();
+                    pst.executeUpdate();    
                     JOptionPane.showMessageDialog(this, "Updated Successfully");
                     txtGoal.setText("");
                     txtEDate.setText("");
@@ -344,7 +344,7 @@ public class Member_Goals_Manage extends javax.swing.JFrame {
             goal = txtGoal.getText();
             sdate = txtSDate.getText();
             edate = txtEDate.getText();
-            if (!edate.isEmpty() || !sdate.isEmpty() || !goal.isEmpty()) {
+            if (!edate.trim().isEmpty() || !sdate.trim().isEmpty() || !goal.trim().isEmpty()) {
 
                 pst = con.prepareStatement("insert into goals(user,goal,startdate,enddate)values(?,?,?,?)");
                 pst.setString(1, username);
@@ -372,7 +372,7 @@ public class Member_Goals_Manage extends javax.swing.JFrame {
 
         try {
             String gid = txtGid.getText();
-            if (gid.isEmpty()) {
+            if (gid.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Enter a valid GID ");
             } else {
                 pst = con.prepareStatement("select * from goals where gid= ? and user = ?");

@@ -1,7 +1,6 @@
 
 import java.sql.*;
 import Backend.ConnectSQL;
-import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -22,32 +21,25 @@ public class Admin_View extends javax.swing.JFrame {
     {
         int cc;
         try{
-            pst =con.prepareStatement("Select name,age,dob,gender,occupation,relation,username,pw from members");
+            pst =con.prepareStatement("call member_table()");
             ResultSet rs = pst.executeQuery();
-            
-            
-           ResultSetMetaData RSMD = rs.getMetaData();
-           cc = RSMD.getColumnCount();
-           DefaultTableModel DFT = (DefaultTableModel) jTable1.getModel();
-           DFT.setRowCount(0);
-           
-           while(rs.next())
-           {
-               
-               Vector v =  new Vector();
-               for(int i=1;i<=cc;i++)
-               {
-                   v.add(rs.getString("name"));
-                   v.add(rs.getString("dob"));
-                   v.add(rs.getString("age"));
-                   v.add(rs.getString("gender"));
-                   v.add(rs.getString("occupation"));
-                   v.add(rs.getString("relation"));
-                   v.add(rs.getString("username"));
-                   v.add(rs.getString("pw"));
-               }
-               DFT.addRow(v);
-           }
+            String username,name,dob,age,gender,occupation,relation,pw;
+            while(rs.next())
+            {
+                username=rs.getString("username");
+                name=rs.getString("name");
+                dob=rs.getString("dob");
+                age=rs.getString("age");
+                gender=rs.getString("gender");
+                occupation=rs.getString("occupation");
+                relation=rs.getString("relation");
+                pw=rs.getString("pw");
+                 String tbData[] = {name,dob,age,gender,occupation,relation,username,pw};
+               DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
+               tblModel.addRow(tbData);
+                
+            }
+         
         }
         catch(Exception e)
         {
@@ -84,16 +76,7 @@ public class Admin_View extends javax.swing.JFrame {
         jTable1.setForeground(new java.awt.Color(42, 68, 146));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+
             },
             new String [] {
                 "NAME", "DOB", "AGE", "GENDER", "OCCUPATION", "RELATION", "USERNAME", "PASSWORD"

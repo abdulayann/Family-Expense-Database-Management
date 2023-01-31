@@ -24,14 +24,12 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         txtRelation = new javax.swing.JTextField();
         txtName = new javax.swing.JTextField();
-        txtAge = new javax.swing.JTextField();
         txtDOB = new javax.swing.JTextField();
         txtGender = new javax.swing.JTextField();
         txtOccupation = new javax.swing.JTextField();
         txtUsername = new javax.swing.JTextField();
         txtPw = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -59,6 +57,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(192, 223, 241));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton5.setBackground(new java.awt.Color(255, 255, 242));
         jButton5.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
@@ -70,10 +69,12 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 484, 81, 50));
 
         jLabel8.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(42, 55, 135));
         jLabel8.setText("RELATION :");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, -1, -1));
 
         txtRelation.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtRelation.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -83,6 +84,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtRelationActionPerformed(evt);
             }
         });
+        jPanel3.add(txtRelation, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 315, 250, 45));
 
         txtName.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -94,15 +96,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtNameActionPerformed(evt);
             }
         });
-
-        txtAge.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
-        txtAge.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtAge.setPreferredSize(new java.awt.Dimension(200, 50));
-        txtAge.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAgeActionPerformed(evt);
-            }
-        });
+        jPanel3.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 95, 250, 45));
 
         txtDOB.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtDOB.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -112,6 +106,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtDOBActionPerformed(evt);
             }
         });
+        jPanel3.add(txtDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 146, 250, 45));
 
         txtGender.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtGender.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -121,6 +116,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtGenderActionPerformed(evt);
             }
         });
+        jPanel3.add(txtGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 250, 45));
 
         txtOccupation.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtOccupation.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -130,6 +126,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtOccupationActionPerformed(evt);
             }
         });
+        jPanel3.add(txtOccupation, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 203, 250, 45));
 
         txtUsername.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtUsername.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -139,6 +136,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtUsernameActionPerformed(evt);
             }
         });
+        jPanel3.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 42, 250, 45));
 
         txtPw.setFont(new java.awt.Font("Trebuchet MS", 0, 28)); // NOI18N
         txtPw.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -148,34 +146,37 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 txtPwActionPerformed(evt);
             }
         });
+        jPanel3.add(txtPw, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 366, 250, 45));
 
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(42, 55, 135));
         jLabel4.setText("NAME :");
-
-        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(42, 55, 135));
-        jLabel3.setText("AGE :");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 170, -1));
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(42, 55, 135));
         jLabel5.setText("DOB :");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(42, 55, 135));
         jLabel6.setText("GENDER :");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, -1, 30));
 
         jLabel7.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(42, 55, 135));
         jLabel7.setText("OCCUPATION :");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(42, 55, 135));
         jLabel11.setText("PASSWORD :");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Trebuchet MS", 1, 28)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(42, 55, 135));
         jLabel10.setText("USERNAME :");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 47, -1, -1));
 
         FetchBut.setBackground(new java.awt.Color(255, 255, 242));
         FetchBut.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
@@ -187,6 +188,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 FetchButActionPerformed(evt);
             }
         });
+        jPanel3.add(FetchBut, new org.netbeans.lib.awtextra.AbsoluteConstraints(678, 42, -1, 40));
 
         jButton6.setBackground(new java.awt.Color(255, 255, 242));
         jButton6.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
@@ -198,6 +200,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 484, -1, 50));
 
         UpdateBut.setBackground(new java.awt.Color(255, 255, 242));
         UpdateBut.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
@@ -209,103 +212,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                 UpdateButActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 410, Short.MAX_VALUE)
-                        .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDOB, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtOccupation, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtRelation, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtPw, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(260, 260, 260))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(210, 210, 210)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel5)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(310, 310, 310)
-                        .addComponent(FetchBut))
-                    .addComponent(jLabel11))
-                .addContainerGap(141, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(UpdateBut, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(299, 299, 299))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(FetchBut, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel10)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jLabel4))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(txtOccupation, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRelation, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addComponent(txtPw, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(UpdateBut, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26))
-        );
+        jPanel3.add(UpdateBut, new org.netbeans.lib.awtextra.AbsoluteConstraints(503, 484, 118, 50));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 920, 560));
 
@@ -356,10 +263,6 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDOBActionPerformed
 
-    private void txtAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAgeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAgeActionPerformed
-
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNameActionPerformed
@@ -370,9 +273,8 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         try {
-            String name, age, dob, gender, occupation, relation, username, pw;
+            String name, dob, gender, occupation, relation, username, pw;
             name = txtName.getText();
-            age = txtAge.getText();
             dob = txtDOB.getText();
             gender = txtGender.getText();
             occupation = txtOccupation.getText();
@@ -380,18 +282,16 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
             username = txtUsername.getText();
             pw = txtPw.getText();
 
-            pst = con.prepareStatement("insert into members(name,age,dob,gender,occupation,relation,username,pw)values(?,?,?,?,?,?,?,?)");
+            pst = con.prepareStatement("insert into members(name,dob,gender,occupation,relation,username,pw)values(?,?,?,?,?,?,?)");
             pst.setString(1, name);
-            pst.setString(2, age);
-            pst.setString(3, dob);
-            pst.setString(4, gender);
-            pst.setString(5, occupation);
-            pst.setString(6, relation);
-            pst.setString(7, username);
-            pst.setString(8, pw);
+            pst.setString(2, dob);
+            pst.setString(3, gender);
+            pst.setString(4, occupation);
+            pst.setString(5, relation);
+            pst.setString(6, username);
+            pst.setString(7, pw);
             pst.executeUpdate();
             txtName.setText("");
-            txtAge.setText("");
             txtDOB.setText("");
             txtGender.setText("");
             txtOccupation.setText("");
@@ -410,14 +310,12 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
     private void FetchButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FetchButActionPerformed
         try {
             String uname = txtUsername.getText();
-            System.out.println(uname);
 
             pst = con.prepareStatement("select * from members where username = ?");
             pst.setString(1, uname);
             rs = pst.executeQuery();
             if (rs.next()) {
                 txtName.setText(rs.getString(2));
-                txtAge.setText(rs.getString(3));
                 txtDOB.setText(rs.getString(4));
                 txtGender.setText(rs.getString(5));
                 txtOccupation.setText(rs.getString(6));
@@ -427,7 +325,6 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(this, "User not found!");
                 txtName.setText("");
-                txtAge.setText("");
                 txtDOB.setText("");
                 txtGender.setText("");
                 txtOccupation.setText("");
@@ -448,7 +345,7 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
         try {
 
             String username = txtUsername.getText();
-            if (username.isEmpty()) {
+            if (username.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Enter a valid username ");
             } else {
 
@@ -461,7 +358,6 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
                     pst.executeUpdate();
                     JOptionPane.showMessageDialog(this, "Record Deleted!");
                     txtName.setText("");
-                    txtAge.setText("");
                     txtDOB.setText("");
                     txtGender.setText("");
                     txtOccupation.setText("");
@@ -482,10 +378,10 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
 
     private void UpdateButActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateButActionPerformed
 
-        String name, age, dob, gender, occupation, relation, pw;
+        String name, dob, gender, occupation, relation, pw;
         String uname = txtUsername.getText();
         name = txtName.getText();
-        age = txtAge.getText();
+
         dob = txtDOB.getText();
         gender = txtGender.getText();
         occupation = txtOccupation.getText();
@@ -494,29 +390,29 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
 
         try {
 
-            if (!uname.isEmpty()) {
+            if (!uname.trim().isEmpty()) {
 
-                if (!name.isEmpty() || !age.isEmpty() || !dob.isEmpty() || !gender.isEmpty() || !occupation.isEmpty() || !relation.isEmpty() || !pw.isEmpty()) {
+                if (!name.trim().isEmpty() || !dob.trim().isEmpty() || !gender.trim().isEmpty() || !occupation.trim().isEmpty() || !relation.trim().isEmpty() || !pw.trim().isEmpty()) {
 
                     pst = con.prepareStatement("select * from members where username=?");
                     pst.setString(1, uname);
                     rs = pst.executeQuery();
 
                     if (rs.next()) {
-                        pst = con.prepareStatement("update members set name=?,age=?,dob=?,gender=?,occupation=?,relation=?,pw=? where username=?");
+                        pst = con.prepareStatement("update members set name=?,dob=?,gender=?,occupation=?,relation=?,pw=? where username=?");
                         pst.setString(1, name);
-                        pst.setString(2, age);
-                        pst.setString(3, dob);
-                        pst.setString(4, gender);
-                        pst.setString(5, occupation);
-                        pst.setString(6, relation);
-                        pst.setString(7, pw);
-                        pst.setString(8, uname);
+
+                        pst.setString(2, dob);
+                        pst.setString(3, gender);
+                        pst.setString(4, occupation);
+                        pst.setString(5, relation);
+                        pst.setString(6, pw);
+                        pst.setString(7, uname);
                         pst.executeUpdate();
                         JOptionPane.showMessageDialog(this, "Successfully updated the record!");
 
                         txtName.setText("");
-                        txtAge.setText("");
+
                         txtDOB.setText("");
                         txtGender.setText("");
                         txtOccupation.setText("");
@@ -574,7 +470,6 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -582,7 +477,6 @@ public class Admin_Memeber_Manage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtDOB;
     private javax.swing.JTextField txtGender;
     private javax.swing.JTextField txtName;

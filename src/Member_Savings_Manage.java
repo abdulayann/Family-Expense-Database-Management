@@ -290,7 +290,7 @@ public class Member_Savings_Manage extends javax.swing.JFrame {
         sid = txtSid.getText();
 
         try {
-            if (!type.isEmpty() || !sid.isEmpty() || !date.isEmpty() || !amount.isEmpty()) {
+            if (!type.trim().isEmpty() || !sid.trim().isEmpty() || !date.trim().isEmpty() || !amount.trim().isEmpty()) {
                 pst = con.prepareStatement("select * from savings where sid = ? and user =?");
                 pst.setString(2, Login.usern);
                 pst.setString(1, sid);
@@ -332,7 +332,7 @@ public class Member_Savings_Manage extends javax.swing.JFrame {
             amount = txtAmt.getText();
             date = txtDate.getText();
             
-            if (!type.isEmpty() || !date.isEmpty() || !amount.isEmpty()) 
+            if (!type.trim().isEmpty() || !date.trim().isEmpty() || !amount.trim().isEmpty()) 
             {
             pst = con.prepareStatement("insert into savings(user,type,amount,date)values(?,?,?,?)");
             pst.setString(1, username);

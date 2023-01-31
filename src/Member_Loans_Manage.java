@@ -1,4 +1,3 @@
-
 import java.sql.*;
 import javax.swing.JOptionPane;
 import Backend.ConnectSQL;
@@ -253,32 +252,32 @@ public class Member_Loans_Manage extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtLid, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtLid, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtAmt, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtAmt, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCategory, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(txtPeriod, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPeriod, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(txtInterest, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtInterest, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -375,7 +374,7 @@ public class Member_Loans_Manage extends javax.swing.JFrame {
         period = txtPeriod.getText();
 
         try {
-            if (!lid.isEmpty() || !name.isEmpty() || !amount.isEmpty() || !category.isEmpty() || !interest.isEmpty() || !date.isEmpty() || !period.isEmpty()) {
+            if (!lid.trim().isEmpty() || !name.trim().isEmpty() || !amount.trim().isEmpty() || !category.trim().isEmpty() || !interest.trim().isEmpty() || !date.trim().isEmpty() || !period.trim().isEmpty()) {
                 pst = con.prepareStatement("select * from loans where lid = ? and user= ?");
                 pst.setString(1, lid);
                 pst.setString(2, Login.usern);
@@ -438,7 +437,7 @@ public class Member_Loans_Manage extends javax.swing.JFrame {
             interest = txtInterest.getText();
             period = txtPeriod.getText();
 
-            if (name.isEmpty() || !amount.isEmpty() || !category.isEmpty() || !interest.isEmpty() || !date.isEmpty() || !period.isEmpty()) {
+            if (name.trim().isEmpty() || !amount.trim().isEmpty() || !category.trim().isEmpty() || !interest.trim().isEmpty() || !date.trim().isEmpty() || !period.trim().isEmpty()) {
             
             pst = con.prepareStatement("insert into loans(user,name,category,amount,date,interest,loanperiod)values(?,?,?,?,?,?,?)");
             pst.setString(1, username);
@@ -473,7 +472,7 @@ public class Member_Loans_Manage extends javax.swing.JFrame {
 
         try {
             String lid = txtLid.getText();
-            if (lid.isEmpty()) {
+            if (lid.trim().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Enter a valid LID ");
             } else {
                 pst = con.prepareStatement("select * from loans where lid =? and user= ?");
